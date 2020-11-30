@@ -1,0 +1,18 @@
+{
+  "properties": [
+    {
+      "name": "cliente.nombre",
+      "type": "java.lang.String",
+      "description": "Description for cliente.nombre."
+    },
+    {
+      "name": "cliente.apellido",
+      "type": "java.lang.String",
+      "description": "Description for cliente.apellido."
+    },
+    {
+      "name": "description.factura",
+      "type": "java.lang.String",
+      "description": "Description for description.factura."
+    }
+  ] }
