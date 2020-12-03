@@ -35,4 +35,22 @@ public class AppConfig {
         return Arrays.asList(lineal,lineal2);
     }
 
+    //Cuando se crea la instancia de este tipo, se crean tambien los registros
+    //utilizando el identificador "itemsFacturaOficina" podemos hacer switch entre que tipo se instanciará
+    //Como inicializador de datos
+    @Bean("itemsFacturaOficina")
+    public List<ItemFactura> registrarItemsOficina(){
+        Producto producto = new Producto("Monitor LG",250);
+        Producto producto2 = new Producto("Notebook Asus",500);
+        Producto producto3 = new Producto("Impresora HP multi",700);
+        Producto producto4 = new Producto("Escritorio oficina",1500);
+
+        ItemFactura lineal = new ItemFactura(producto, 2);
+        ItemFactura lineal2 = new ItemFactura(producto2, 1);
+        ItemFactura lineal3 = new ItemFactura(producto3, 1);
+        ItemFactura lineal4 = new ItemFactura(producto4, 1);
+
+        return Arrays.asList(lineal,lineal2, lineal3, lineal4);
+    }
+
 }
